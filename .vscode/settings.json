@@ -169,7 +169,7 @@
   // 允许语言检测使用编辑器历史记录
   "workbench.editor.historyBasedLanguageDetection": true,
   // 文件图标主题: 插件 vscode-icons
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "material-icon-theme",
   // 在没有从上一个会话恢复出信息的情况下，在启动时不打开编辑器
   "workbench.startupEditor": "none",
   // 显示视图头部的操作项
@@ -414,7 +414,7 @@
     "-fsanitize=undefined",
     "-stdlib=libstdc++",
     "-std=c++2b",
-    "-l/usr/include/c++/12.2.1",
+    "-l/usr/include/c++/12.2.1"
   ],
   // 重启 clangd 时重载配置
   // 重启方法：
