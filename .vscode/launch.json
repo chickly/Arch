@@ -5,7 +5,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "(lldb) CMake",
+      "name": "LLDB：CMake",
       "type": "lldb",
       "request": "launch",
       // Resolved by CMake Tools:
