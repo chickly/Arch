@@ -1,0 +1,12 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=url
+command=/usr/bin/cmake;-P;/home/liu/Code/Cpp/_deps/_project_options-subbuild/_project_options-populate-prefix/src/_project_options-populate-stamp/download-_project_options-populate.cmake;COMMAND;/usr/bin/cmake;-P;/home/liu/Code/Cpp/_deps/_project_options-subbuild/_project_options-populate-prefix/src/_project_options-populate-stamp/verify-_project_options-populate.cmake;COMMAND;/usr/bin/cmake;-P;/home/liu/Code/Cpp/_deps/_project_options-subbuild/_project_options-populate-prefix/src/_project_options-populate-stamp/extract-_project_options-populate.cmake
+source_dir=/home/liu/Code/Cpp/_deps/_project_options-src
+work_dir=/home/liu/Code/Cpp/_deps
+url(s)=https://gitee.com/FeignClaims/vscode-llvm-cpp-starter/raw/master/project_options.zip
+hash=
+no_extract=
+
