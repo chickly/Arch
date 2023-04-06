@@ -464,6 +464,7 @@
   "lldb.showDisassembly": "never",
   // LLDB 生成更详细的日志
   "lldb.verboseLogging": true,
+  
 
   /**************
    * CodeRunner *
