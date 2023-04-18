@@ -5,5 +5,6 @@ void myFcn(int x) {
 }
 
 int main() {
+  myFcn(5);
   return 0;
 }
