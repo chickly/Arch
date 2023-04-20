@@ -27,7 +27,9 @@
       "args": [],
       "stopOnEntry": false,
       "cwd": "${fileDirname}",
-      "sourceMap": { ".": "${fileDirname}" },
+      "sourceMap": {
+        ".": "${fileDirname}"
+      },
       "internalConsoleOptions": "neverOpen",
       "preLaunchTask": "Clang++: 编译单文件"
     },
@@ -39,7 +41,9 @@
       "args": [],
       "stopOnEntry": false,
       "cwd": "${fileDirname}",
-      "sourceMap": { ".": "${fileDirname}" },
+      "sourceMap": {
+        ".": "${fileDirname}"
+      },
       "internalConsoleOptions": "neverOpen",
       "preLaunchTask": "Clang++: 编译多文件"
     },
@@ -51,7 +55,9 @@
       "args": [],
       "stopOnEntry": false,
       "cwd": "${fileDirname}",
-      "sourceMap": { ".": "${fileDirname}" },
+      "sourceMap": {
+        ".": "${fileDirname}"
+      },
       "internalConsoleOptions": "neverOpen"
     }
   ]
