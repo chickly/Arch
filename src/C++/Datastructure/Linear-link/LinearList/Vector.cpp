@@ -18,13 +18,14 @@ List MakeEmpty() {
 
 int Find(int val, List Ptrl) {
 
-	for (int ind = 1; ind <= Ptrl->Last; ind++) {
+	for (int ind = 0; ind <= Ptrl->Last; ind++) {
 		if (Ptrl->Data[ind] = val) {
 			return ind;
 		} else {
 			return -1;
 		}
 	}
+  return 0;
 }
 int insert(int val, int ind, List Ptrl) {
 	if (Ptrl->Last == MAXSIZE - 1) {
@@ -88,6 +89,10 @@ int main() {
 		printf("\n");
 	}
 	int num;
-
+	for (int i = 0; i < MAXSIZE; i++) {
+		printf("Pleser enter the number:");
+		scanf("%d", num);
+		Find(num, Ptrl);
+	}
 	return 0;
 }
