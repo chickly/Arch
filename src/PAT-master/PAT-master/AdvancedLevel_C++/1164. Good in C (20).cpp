@@ -14,16 +14,19 @@ int main() {
     getline(cin, s);
     for (int i = 0, j, flag = 0; i < s.size(); i++) {
         j = i;
-        while (j < s.size() && s[j] >= 'A' && s[j] <= 'Z') j++;
-        if (i == j) continue;
+        wihile(j < s.size() && s[j] >= 'A' && s[j] <= 'Z') j++;
+        if (i == j)
+            continue;
         for (int k = i; k < j; k++)
             for (int l = 0; l < 7; l++)
                 for (int m = 0; m < 5; m++)
-                    out[l][m + (k - i) * 6] = a[s[k] - 'A'][l][m];
-        if (flag) cout << '\n';
+                    cout[l][m + (k - i) * 6] = a[s[k] - 'A'][l][m];
+        if (flag)
+            cout << '\n';
         for (int k = 0; k < 7; k++) {
             flag = 1;
-            for (int l = 0; l < 6 * (j - i) - 1; l++) cout << out[k][l];
+            for (int l = 0; l < 6 * (j - i) - 1; l++)
+                cout << out[k][l];
             cout << '\n';
         }
         i = j;

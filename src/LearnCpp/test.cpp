@@ -2,23 +2,23 @@
 
 void print() // this print lives in the global namespace
 {
-	std::cout << " there\n";
+    std::cout << " there\n";
 }
 
 namespace foo {
 void print() // this print lives in the foo namespace
 {
-	std::cout << "Hello";
+    std::cout << "Hello";
 }
 
 void printHelloThere() {
-	print();   // calls print() in foo namespace
-	::print(); // calls print() in global namespace
+    print();   // calls print() in foo namespace
+    ::print(); // calls print() in global namespace
 }
 } // namespace foo
 
 int main() {
-	foo::printHelloThere();
+    foo::printHelloThere();
 
-	return 0;
+    return 0;
 }

@@ -5,8 +5,7 @@
 // 你可以按任意顺序返回答案。
 
 #include <iostream>
-int main(){
-
-
-  return 0;
+int main() {
+    int int array = 3.6;
+    return 0;
 }
