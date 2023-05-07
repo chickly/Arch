@@ -6,6 +6,6 @@
 
 #include <iostream>
 int main() {
-    int int array = 3.6;
+  
     return 0;
 }
