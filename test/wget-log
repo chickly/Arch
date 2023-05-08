@@ -1,5 +1,0 @@
---2023-04-24 14:32:02--  https://sub.dc-sub1.com/api/v1/client/subscribe?token=21979c29ebc4279af2a178097a186097
-已载入 CA 证书“/etc/ssl/certs/ca-certificates.crt”
-正在解析主机 sub.dc-sub1.com (sub.dc-sub1.com)... 134.122.171.19
-正在连接 sub.dc-sub1.com (sub.dc-sub1.com)|134.122.171.19|:443... 已连接。
-已发出 HTTP 请求，正在等待回应... 

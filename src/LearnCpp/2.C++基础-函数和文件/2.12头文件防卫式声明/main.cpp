@@ -1,4 +1,5 @@
 #include "square.h"  // square.h 在此处被包含一次
+#include <type_traits>
 
 #include <iostream>
 

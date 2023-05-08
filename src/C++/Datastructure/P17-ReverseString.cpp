@@ -25,15 +25,15 @@ void ReverseList() {
 	}
 	stack<Node*> S;
 	Node* temp = head;
-  while(head){
-    S.push(temp);
-    temp = temp->Next;
-  }
-  while(!S.empty()){
-    temp->Next = S.top();
-    S.pop();
-    temp = temp->Next;
-  }
+	while (head) {
+		S.push(temp);
+		temp = temp->Next;
+	}
+	while (!S.empty()) {
+		temp->Next = S.top();
+		S.pop();
+		temp = temp->Next;
+	}
 }
 int main() {
 	char C[51];

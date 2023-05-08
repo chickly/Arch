@@ -1,0 +1,126 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 6.2.12-arch1-1 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /usr/bin/clang-cl 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      clang-15: warning: unable to find a Visual Studio installation; try running Clang from a developer command prompt [-Wmsvc-not-found]
+      clang-15: error: unable to execute command: Executable "link.exe" doesn't exist!
+      clang-15: error: linker command failed with exit code 1 (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/clang-cl 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is Clang, found in:
+        /home/liu/Code/Cpp/build/CMakeFiles/3.26.3/CompilerIdCXX/CMakeCXXCompilerId.obj
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        Note: including file: ./foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/liu/Code/Cpp/build/CMakeFiles/CMakeScratch/TryCompile-cIuLD6"
+      binary: "/home/liu/Code/Cpp/build/CMakeFiles/CMakeScratch/TryCompile-cIuLD6"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/liu/Code/Cpp/build/CMakeFiles/CMakeScratch/TryCompile-cIuLD6
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_32abd && [1/2] /usr/bin/clang-cl    -o CMakeFiles/cmTC_32abd.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        [2/2] : && /usr/bin/clang-cl   CMakeFiles/cmTC_32abd.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_32abd   && :
+        FAILED: cmTC_32abd 
+        : && /usr/bin/clang-cl   CMakeFiles/cmTC_32abd.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_32abd   && :
+        clang-15: warning: unable to find a Visual Studio installation; try running Clang from a developer command prompt [-Wmsvc-not-found]
+        clang-15: error: unable to execute command: Executable "link.exe" doesn't exist!
+        clang-15: error: linker command failed with exit code 1 (use -v to see invocation)
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:49 (try_compile)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Check for working CXX compiler: /usr/bin/clang-cl"
+    directories:
+      source: "/home/liu/Code/Cpp/build/CMakeFiles/CMakeScratch/TryCompile-KgBbnx"
+      binary: "/home/liu/Code/Cpp/build/CMakeFiles/CMakeScratch/TryCompile-KgBbnx"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: /home/liu/Code/Cpp/build/CMakeFiles/CMakeScratch/TryCompile-KgBbnx
+        
+        Run Build Command(s):/usr/bin/ninja -v cmTC_03543 && [1/2] /usr/bin/clang-cl    -o CMakeFiles/cmTC_03543.dir/testCXXCompiler.cxx.o -c /home/liu/Code/Cpp/build/CMakeFiles/CMakeScratch/TryCompile-KgBbnx/testCXXCompiler.cxx
+        [2/2] : && /usr/bin/clang-cl   CMakeFiles/cmTC_03543.dir/testCXXCompiler.cxx.o -o cmTC_03543   && :
+        FAILED: cmTC_03543 
+        : && /usr/bin/clang-cl   CMakeFiles/cmTC_03543.dir/testCXXCompiler.cxx.o -o cmTC_03543   && :
+        clang-15: warning: unable to find a Visual Studio installation; try running Clang from a developer command prompt [-Wmsvc-not-found]
+        clang-15: error: unable to execute command: Executable "link.exe" doesn't exist!
+        clang-15: error: linker command failed with exit code 1 (use -v to see invocation)
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
