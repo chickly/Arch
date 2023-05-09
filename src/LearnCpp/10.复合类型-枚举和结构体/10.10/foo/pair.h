@@ -5,8 +5,7 @@ template <typename T> typedef struct Pair {
 	T secone{};
 };
 
-template <typename T>
-constexpr T Max(Pair<T> P){
-  return (P.first > P.secone) ? P.first:P.secone;
+template <typename T> constexpr T Max(Pair<T> P) {
+	return (P.first > P.secone) ? P.first : P.secone;
 }
 #endif
