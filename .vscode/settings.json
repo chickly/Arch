@@ -122,13 +122,19 @@
       ]
     },
     "Msys2": {
-      "args": ["-defterm", "-no-start", "-here"],
+      "args": [
+        "-defterm",
+        "-no-start",
+        "-here"
+      ],
       "env": {
         "CHERE_INVOKING": "1",
         "MSYS2_PATH_TYPE": "inherit",
         "MSYSTEM": "CLANG64"
       },
-      "path": ["C:/msys64/msys2_shell.cmd"]
+      "path": [
+        "C:/msys64/msys2_shell.cmd"
+      ]
     },
     "PowerShell": {
       "icon": "terminal-powershell",
@@ -139,16 +145,22 @@
   "terminal.integrated.profiles.osx": {
     "bash": {
       "path": "bash",
-      "args": ["-l"],
+      "args": [
+        "-l"
+      ],
       "icon": "terminal-bash"
     },
     "zsh": {
       "path": "zsh",
-      "args": ["-l"]
+      "args": [
+        "-l"
+      ]
     },
     "fish": {
       "path": "fish",
-      "args": ["-l"]
+      "args": [
+        "-l"
+      ]
     },
     "tmux": {
       "path": "tmux",
@@ -174,7 +186,6 @@
   "workbench.startupEditor": "none",
   // 显示视图头部的操作项
   "workbench.view.alwaysShowHeaderActions": true,
-
   /********
    * Font *
    ********/
@@ -207,7 +218,6 @@
   "terminal.integrated.fontFamily": "JetBrains Mono, MesloLGS Nerd Font, MesloLGS NF, 等距更纱黑体 SC",
   // 集成终端字号
   "terminal.integrated.fontSize": 14,
-
   /*********
    * Color *
    *********/
@@ -334,7 +344,6 @@
       "editorBracketHighlight.foreground6": "#A5ADFE"
     }
   },
-
   /**********
    * Clangd *
    **********/
@@ -426,12 +435,13 @@
   "clangd.detectExtensionConflicts": true,
   // clangd的snippets有很多的跳转点，不用这个就必须手动触发Intellisense了
   "editor.suggest.snippetsPreventQuickSuggestions": false,
-
   /*********
    * CMake *
    *********/
   // 生成时额外传递给 CMake 的参数
-  "cmake.buildArgs": ["-j"],
+  "cmake.buildArgs": [
+    "-j"
+  ],
   // 保存 CMakeLists.txt 内容时，不自动配置 CMake 项目目录
   "cmake.configureOnEdit": false,
   // 在 CMake 项目目录打开时，不自动对其进行配置
@@ -448,7 +458,6 @@
   // 允许参数缩进递进
   "cmake.format.allowOptionalArgumentIndentation": true,
   "cmake.languageSupport.enableFileAPI": true,
-
   /********
    * LLDB *
    ********/
@@ -464,18 +473,19 @@
   "lldb.showDisassembly": "never",
   // LLDB 生成更详细的日志
   "lldb.verboseLogging": true,
-  
-
   /**************
    * CodeRunner *
    **************/
   // Code Runner 的 C++ 编译配置，考虑到一致性，可执行文件输出到build文件夹中，命名为test
   "code-runner.executorMap": {
     "cpp": "cd $dir && clang++ $fileName -pthread -pedantic -Wall -Wcast-align -Wdouble-promotion -Wextra -Wextra-semi -Wformat=2 -Wimplicit-fallthrough -Wmisleading-indentation -Wnon-virtual-dtor -Wnull-dereference -Wold-style-cast -Woverloaded-virtual -Wpedantic -Wshadow -Wno-sign-conversion -Wunused -fuse-ld=lld -stdlib=libstdc++ -std=c++2b -o $workspaceRoot/build/test && $workspaceRoot/build/test"
-    
   },
   // Code Runner 总是运行整个文件而非选择的部分
   "code-runner.ignoreSelection": true,
   // Code Runner 在终端运行
-  "code-runner.runInTerminal": true
+  "code-runner.runInTerminal": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+  "python.formatting.provider": "none"
 }
