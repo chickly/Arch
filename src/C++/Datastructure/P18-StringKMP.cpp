@@ -7,32 +7,34 @@
 #include <iostream>
 #include <stack>
 #include <string>
-int Stack(std::string const& str) {
-	std::stack<char> st;
-	for (char c : str) {
-		if (c == '(' || c == '[' || c == '{') {
-			st.push(c);
-		} else if (c == ')' || c == ']' || c == '}') {
-			if (st.empty()) {
-				return 0;
-			}
-			if ((c == ')' && st.top() != '(') || (c == ']' && st.top() != '[') || (c == '{' && st.top() != '}')) {
-				return 0;
-			}
-		}
-	}
-	return 1;
+int Stack(std::string const &str) {
+    std::stack<char> st;
+    for (char c : str) {
+        if (c == '(' || c == '[' || c == '{') {
+            st.push(c);
+        } else if (c == ')' || c == ']' || c == '}') {
+            if (st.empty()) {
+                return 0;
+            }
+            if ((c == ')' && st.top() != '(') ||
+                (c == ']' && st.top() != '[') ||
+                (c == '{' && st.top() != '}')) {
+                return 0;
+            }
+        }
+    }
+    return 1;
 }
 int main() {
-	std::string str;
-	std::cout << "Please enter a string: ";
-	std::getline(std::cin, str);
-	if (Stack(str)) {
-		std::cout << "The string is matched"
-		          << "\n";
-	} else {
-		std::cout << "The string is not matched"
-		          << "\n";
-	}
-	return 0;
+    std::string str;
+    std::cout << "Please enter a string: ";
+    std::getline(std::cin, str);
+    if (Stack(str)) {
+        std::cout << "The string is matched"
+                  << "\n";
+    } else {
+        std::cout << "The string is not matched"
+                  << "\n";
+    }
+    return 0;
 }
