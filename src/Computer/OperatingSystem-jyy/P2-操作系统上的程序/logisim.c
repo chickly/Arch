@@ -19,12 +19,12 @@
 #define PRINT(X) printf(#X " = %d; ", X);
 
 int main() {
-    REGS_FOREACH(DEFINE);
-    OUTS_FOREACH(DEFINE);
+    REGS_FOREACH(DEFINE)
+    OUTS_FOREACH(DEFINE)
     while (1) { // clock
-        RUN_LOGIC;
-        OUTS_FOREACH(PRINT);
-        REGS_FOREACH(UPDATE);
+        RUN_LOGIC
+        OUTS_FOREACH(PRINT)
+        REGS_FOREACH(UPDATE)
         putchar('\n');
         fflush(stdout);
         sleep(1);
