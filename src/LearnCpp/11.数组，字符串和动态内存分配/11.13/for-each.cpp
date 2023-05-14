@@ -15,4 +15,3 @@ int main() {
     std::cout << "The best score was " << maxScore << '\n';
 
     return 0;
-}
