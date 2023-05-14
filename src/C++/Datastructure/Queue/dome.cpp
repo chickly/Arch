@@ -1,7 +1,8 @@
-#include <iostream>
-
+#include <cctype>
+#include <iostream
 int main() {
-    int Queue{};
+    int Queue[10];
+    
 
     return 0;
 }
